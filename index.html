@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Klinikasi - Sog'lik Xizmatlari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">🏥</span>
+                <span class="logo-text">MediCare</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Bosh sahifa</a></li>
+                <li><a href="#services" class="nav-link">Xizmatlar</a></li>
+                <li><a href="#doctors" class="nav-link">Doktorlar</a></li>
+                <li><a href="#appointment" class="nav-link">Qabul qilish</a></li>
+                <li><a href="#contact" class="nav-link">Aloqa</a></li>
+                <li><button class="admin-btn" id="adminLoginBtn">Admin</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Sizning Sog'lig'ingiz - Bizning Vazifamiz</h1>
+            <p class="hero-subtitle">MediCare klinikasida yuqori sifatli tibbiy xizmatlardan foydalaning</p>
+            <a href="#appointment" class="btn btn-primary">Qabul qilishni band qiling</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-icon">👨‍⚕️</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Bizning Xizmatlar</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Umumiy Terapiya</h3>
+                    <p>Barcha yoshdagi bemorlari uchun umumiy tibbiy qabul va maslahat</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">❤️</div>
+                    <h3>Kardiologiya</h3>
+                    <p>Yurak va qon tomirlari sog'lig'i bo'yicha mutaxassis xizmatlar</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Pediatriya</h3>
+                    <p>Bolalar uchun ixtisoslashtirilgan tibbiy ko'riklar va davolash</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">🦴</div>
+                    <h3>Ortopediya</h3>
+                    <p>Suyak va bugtalar sog'lig'ini saqlash va davolash xizmatlari</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3>Nevrologiya</h3>
+                    <p>Asab tizimi kasalliklarining diagnostikasi va davolashi</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">🦷</div>
+                    <h3>Stomatologiya</h3>
+                    <p>Tish sog'lig'i bo'yicha professional mutaxassis maslahat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors-section">
+        <div class="container">
+            <h2 class="section-title">Bizning Doktorlar</h2>
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card">
+                    <div class="doctor-avatar">👨‍⚕️</div>
+                    <h3>Dr. Alisher Qodiriy</h3>
+                    <p class="doctor-specialty">Umumiy Terapevt</p>
+                    <p class="doctor-experience">15+ yil tajribasi</p>
+                    <p class="doctor-bio">O'zbekistonda va chet elda o'qigan mahir doktor</p>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card">
+                    <div class="doctor-avatar">👨‍⚕️</div>
+                    <h3>Dr. Shodi Mirzaev</h3>
+                    <p class="doctor-specialty">Kardiyolog</p>
+                    <p class="doctor-experience">12+ yil tajribasi</p>
+                    <p class="doctor-bio">Yurak va qon tomirlari kasalliklari bo'yicha mutaxassis</p>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card">
+                    <div class="doctor-avatar">👩‍⚕️</div>
+                    <h3>Dr. Nozim Karimova</h3>
+                    <p class="doctor-specialty">Pediatr</p>
+                    <p class="doctor-experience">10+ yil tajribasi</p>
+                    <p class="doctor-bio">Bolalar sog'lig'iga ixtisoslashtirilgan mutaxassis</p>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="doctor-card">
+                    <div class="doctor-avatar">👨‍⚕️</div>
+                    <h3>Dr. Dilmurod Xusainov</h3>
+                    <p class="doctor-specialty">Ortoped</p>
+                    <p class="doctor-experience">14+ yil tajribasi</p>
+                    <p class="doctor-bio">Suyak-bugun tizimi kasalliklari bo'yicha barcha muolajalar</p>
+                </div>
+
+                <!-- Doctor 5 -->
+                <div class="doctor-card">
+                    <div class="doctor-avatar">👩‍⚕️</div>
+                    <h3>Dr. Laylo Abdullayeva</h3>
+                    <p class="doctor-specialty">NevroPatolog</p>
+                    <p class="doctor-experience">11+ yil tajribasi</p>
+                    <p class="doctor-bio">Asab tizimi kasalliklari diagnostikasi va davolashi</p>
+                </div>
+
+                <!-- Doctor 6 -->
+                <div class="doctor-card">
+                    <div class="doctor-avatar">👨‍⚕️</div>
+                    <h3>Dr. Rustam Mahmudov</h3>
+                    <p class="doctor-specialty">Stomatolog</p>
+                    <p class="doctor-experience">8+ yil tajribasi</p>
+                    <p class="doctor-bio">Tish sog'lig'i va estetika bo'yicha professional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment-section">
+        <div class="container">
+            <h2 class="section-title">Qabul qilishni band qiling</h2>
+            <div class="appointment-container">
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-group">
+                        <label for="firstName">Ism *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Familiya *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon raqami *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+998 (99) 123-45-67" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="doctor">Doktorni tanlang *</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="">-- Doktorni tanlang --</option>
+                            <option value="Dr. Alisher Qodiriy">Dr. Alisher Qodiriy - Umumiy Terapevt</option>
+                            <option value="Dr. Shodi Mirzaev">Dr. Shodi Mirzaev - Kardiyolog</option>
+                            <option value="Dr. Nozim Karimova">Dr. Nozim Karimova - Pediatr</option>
+                            <option value="Dr. Dilmurod Xusainov">Dr. Dilmurod Xusainov - Ortoped</option>
+                            <option value="Dr. Laylo Abdullayeva">Dr. Laylo Abdullayeva - Nevropatolog</option>
+                            <option value="Dr. Rustam Mahmudov">Dr. Rustam Mahmudov - Stomatolog</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointmentDate">Talab qilingan sana *</label>
+                        <input type="date" id="appointmentDate" name="appointmentDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointmentTime">Talab qilingan vaqt *</label>
+                        <select id="appointmentTime" name="appointmentTime" required>
+                            <option value="">-- Vaqtni tanlang --</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="symptoms">Shikoyat / Simptomlar *</label>
+                        <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Qabul qilishni band qiling</button>
+                </form>
+
+                <!-- Queue Number Display -->
+                <div id="queueDisplay" class="queue-display" style="display: none;">
+                    <div class="queue-card">
+                        <h3>✓ Qabul Muvaffaqiyatli Band Qilindi!</h3>
+                        <div class="queue-info">
+                            <div class="queue-number-large" id="queueNumber"></div>
+                            <p id="queueDetails"></p>
+                        </div>
+                        <button class="btn btn-secondary" onclick="resetForm()">Yangi Qabul</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Bizning Aloqa</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Manzil</h3>
+                        <p>Toshkent sh., Almazar raion,<br>To'rtkul ko'chasi, 10-uy</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📞 Telefon</h3>
+                        <p><a href="tel:+998712345678">+998 (71) 234-56-78</a></p>
+                        <p><a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>⏰ Ish vaqti</h3>
+                        <p>Dushanba - Juma: 09:00 - 18:00<br>Shanba: 09:00 - 15:00<br>Yakshanba: Yopiq</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:info@medicare.uz">info@medicare.uz</a></p>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ismingiz" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email manzilingiz" id="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sizning xabarngiz..." rows="5" id="contactMessage" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 MediCare Klinikasi. Barcha huquqlar himoyalangan.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="adminModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeAdminModal()">&times;</button>
+            <h2>Admin Paneliga kirish</h2>
+            <form id="adminLoginForm" class="admin-login-form">
+                <div class="form-group">
+                    <label for="adminUsername">Foydalanuvchi nomi *</label>
+                    <input type="text" id="adminUsername" name="adminUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">Parol *</label>
+                    <input type="password" id="adminPassword" name="adminPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirish</button>
+                <p id="loginError" class="error-message" style="display: none;"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel (Hidden) -->
+    <div id="adminPanel" class="admin-panel" style="display: none;">
+        <nav class="admin-navbar">
+            <div class="admin-nav-content">
+                <h2>Admin Panel</h2>
+                <button id="logoutBtn" class="btn btn-danger">Chiqish</button>
+            </div>
+        </nav>
+
+        <div class="admin-container">
+            <div class="admin-tabs">
+                <button class="admin-tab-btn active" data-tab="appointments">Barcha Qabullar</button>
+                <button class="admin-tab-btn" data-tab="statistics">Statistika</button>
+            </div>
+
+            <!-- Appointments Tab -->
+            <div id="appointments-tab" class="admin-tab-content active">
+                <h3>Barcha Qabullar</h3>
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Navbat Raqami</th>
+                                <th>Ism</th>
+                                <th>Familiya</th>
+                                <th>Telefon</th>
+                                <th>Doktor</th>
+                                <th>Sana</th>
+                                <th>Vaqt</th>
+                                <th>Simptomlar</th>
+                                <th>Amallar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appointmentsTable">
+                            <!-- Appointments will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Statistics Tab -->
+            <div id="statistics-tab" class="admin-tab-content">
+                <h3>Statistika</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Jami Qabullar</h4>
+                        <div class="stat-number" id="totalAppointments">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Bugun Qabullar</h4>
+                        <div class="stat-number" id="todayAppointments">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Eng Populyar Doktor</h4>
+                        <div class="stat-text" id="popularDoctor">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Ushbu Hafta</h4>
+                        <div class="stat-number" id="weekAppointments">0</div>
+                    </div>
+                </div>
+
+                <!-- Doctor Statistics -->
+                <div class="doctor-stats">
+                    <h4>Doktor bo'yicha Qabullar</h4>
+                    <div id="doctorStats"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

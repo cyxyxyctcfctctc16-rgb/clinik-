@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Clinic - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🏥 MediCare Clinic - Admin</div>
+            <div class="nav-links">
+                <span class="admin-status">🔐 Admin Mode</span>
+                <button id="logoutBtn" class="admin-btn logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <button class="sidebar-btn active" data-tab="appointments">
+                    📅 All Appointments
+                </button>
+                <button class="sidebar-btn" data-tab="patients">
+                    👥 Patients List
+                </button>
+                <button class="sidebar-btn" data-tab="doctors">
+                    👨‍⚕️ Doctor Stats
+                </button>
+                <button class="sidebar-btn" data-tab="analytics">
+                    📊 Analytics
+                </button>
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            <!-- Appointments Tab -->
+            <section id="appointments" class="admin-tab active">
+                <div class="tab-header">
+                    <h2>All Appointments</h2>
+                    <input type="text" id="appointmentSearch" class="search-input" placeholder="Search by name or doctor...">
+                </div>
+                <div class="appointments-table-container">
+                    <table class="appointments-table">
+                        <thead>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Doctor</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appointmentsBody">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                    <div id="emptyAppointments" class="empty-state">
+                        No appointments yet. Patients will appear here.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Patients List Tab -->
+            <section id="patients" class="admin-tab">
+                <div class="tab-header">
+                    <h2>Patients & Doctor Choices</h2>
+                    <input type="text" id="patientSearch" class="search-input" placeholder="Search by patient name...">
+                </div>
+                <div class="patients-table-container">
+                    <table class="patients-table">
+                        <thead>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Assigned Doctor</th>
+                                <th>Reason</th>
+                                <th>Booking Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="patientsBody">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                    <div id="emptyPatients" class="empty-state">
+                        No patient records found.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Doctor Stats Tab -->
+            <section id="doctors" class="admin-tab">
+                <div class="tab-header">
+                    <h2>Doctor Statistics</h2>
+                </div>
+                <div class="doctors-stats" id="doctorStats">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Analytics Tab -->
+            <section id="analytics" class="admin-tab">
+                <div class="tab-header">
+                    <h2>Dashboard Analytics</h2>
+                </div>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>Total Appointments</h3>
+                        <div class="analytics-value" id="totalAppointments">0</div>
+                        <p class="analytics-label">This month</p>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Total Patients</h3>
+                        <div class="analytics-value" id="totalPatients">0</div>
+                        <p class="analytics-label">Registered</p>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Confirmed</h3>
+                        <div class="analytics-value" id="confirmedCount">0</div>
+                        <p class="analytics-label">Appointments</p>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Pending</h3>
+                        <div class="analytics-value" id="pendingCount">0</div>
+                        <p class="analytics-label">Appointments</p>
+                    </div>
+                </div>
+
+                <div class="analytics-section">
+                    <h3>Appointments by Doctor</h3>
+                    <div class="doctor-chart" id="doctorChart">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="analytics-section">
+                    <h3>Upcoming Appointments</h3>
+                    <div id="upcomingList" class="upcoming-list">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="modal">
+        <div class="modal-content">
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminPassword">Password</label>
+                    <input type="password" id="adminPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <p id="loginError" class="error-message" style="display: none;">Invalid password</p>
+        </div>
+    </div>
+
+    <footer class="admin-footer">
+        <p>&copy; 2026 MediCare Clinic Admin Panel. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
